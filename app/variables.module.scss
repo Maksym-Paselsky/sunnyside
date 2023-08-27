@@ -1,0 +1,24 @@
+$soft-red-primary: hsl(7, 99%, 70%);
+$yellow-primary: hsl(51, 100%, 49%);
+$dark-desaturated-cyan-primary: hsl(167, 40%, 24%);
+$dark-blue-primary: hsl(198, 62%, 26%);
+$dark-moderate-cyan-primary: hsl(168, 34%, 41%);
+
+$very-dark-desaturated-blue-neutral: hsl(212, 27%, 19%);
+$very-dark-grayish-blue-neutral: hsl(213, 9%, 39%);
+$dark-grayish-blue-neutral: hsl(232, 10%, 55%);
+$grayish-blue-neutral: hsl(210, 4%, 67%);
+$white-neutral: hsl(0, 0%, 100%);
+
+:export {
+  soft-red-primary: $soft-red-primary;
+  yellow-primary: $yellow-primary;
+  dark-desaturated-cyan-primary: $dark-desaturated-cyan-primary;
+  dark-blue-primary: $dark-blue-primary;
+  dark-moderate-cyan-primary: $dark-moderate-cyan-primary;
+  very-dark-desaturated-blue-neutral: $very-dark-desaturated-blue-neutral;
+  very-dark-grayish-blue-neutral: $very-dark-grayish-blue-neutral;
+  dark-grayish-blue-neutral: $dark-grayish-blue-neutral;
+  grayish-blue-neutral: $grayish-blue-neutral;
+  white-neutral: $white-neutral;
+}
