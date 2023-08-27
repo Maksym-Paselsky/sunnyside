@@ -1,3 +1,10 @@
-ul {
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
   list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: #000000;
 }
