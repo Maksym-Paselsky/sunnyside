@@ -1,8 +1,31 @@
 "use client";
 import Image from "next/image";
-import Button from "../Button/button";
 import styles from "./header.module.scss";
 import logo from "../../public/logo.svg";
+import styled from "styled-components";
+
+const Button = styled.button`
+  font-family: var(--fraunces-font), sans-serif;
+  font-size: 1.2rem;
+  background: white;
+  font-weight: 400;
+  border: none;
+  color: black;
+  border-radius: 40px;
+  margin-right: 40px;
+  padding: 25px 35px;
+`;
+
+const Link = styled.a`
+  font-family: var(--barlow-font), sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  margin-right: 40px;
+  padding: 12px 25px;
+`;
+
 export default function Header() {
   return (
     <nav className={styles.navbar}>
@@ -11,26 +34,16 @@ export default function Header() {
       </div>
       <ul className={styles.list}>
         <li>
-          <a className={styles.link} href="/">
-            About
-          </a>
+          <Link>About</Link>
         </li>
         <li>
-          <a className={styles.link} href="/">
-            Services
-          </a>
+          <Link href="/">Services</Link>
         </li>
         <li>
-          <a className={styles.link} href="/">
-            Projects
-          </a>
+          <Link href="/">Projects</Link>
         </li>
         <li>
-          <Button
-            text="Contact"
-            onClick={() => console.log("contact")}
-            className={styles.but}
-          />
+          <Button>CONTACT</Button>
         </li>
       </ul>
     </nav>
