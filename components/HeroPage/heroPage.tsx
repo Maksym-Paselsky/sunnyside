@@ -1,8 +1,13 @@
 "use client";
 import Image from "next/image";
-import styles from "./heroImage.module.scss";
+
 import styled from "styled-components";
 
+const RelativeContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+`;
 const Title = styled.h1`
   font-family: var(--fraunces-font), sans-serif;
   color: white;
@@ -30,9 +35,18 @@ const Arrow = styled.div`
   height: 50px;
 `;
 
+const Picture = styled.div`.
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+`;
+
 export default function HeroImage() {
   return (
-    <>
+    <RelativeContainer>
       <TextContainer>
         <Title>WE ARE CREATIVES</Title>
       </TextContainer>
@@ -44,9 +58,9 @@ export default function HeroImage() {
           height={180}
         />
       </Arrow>
-      <div className={styles.heroImage}>
+      <Picture>
         <Image src="/images/desktop/image-header.jpg" alt="hero image" fill />
-      </div>
-    </>
+      </Picture>
+    </RelativeContainer>
   );
 }

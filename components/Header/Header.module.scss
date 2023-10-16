@@ -2,14 +2,13 @@
 
 .navbar {
   position: absolute;
+  width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  z-index: 2;
+  z-index: 1;
 }
 .logo {
   margin: 30px;

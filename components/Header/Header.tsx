@@ -28,24 +28,26 @@ const Link = styled.a`
 
 export default function Header() {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Image src={logo} alt="logo" width={150} />
-      </div>
-      <ul className={styles.list}>
-        <li>
-          <Link>About</Link>
-        </li>
-        <li>
-          <Link href="/">Services</Link>
-        </li>
-        <li>
-          <Link href="/">Projects</Link>
-        </li>
-        <li>
-          <Button>CONTACT</Button>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav className={styles.navbar}>
+        <div className={styles.logo}>
+          <Image src={logo} alt="logo" width={150} />
+        </div>
+        <ul className={styles.list}>
+          <li>
+            <Link>About</Link>
+          </li>
+          <li>
+            <Link href="/">Services</Link>
+          </li>
+          <li>
+            <Link href="/">Projects</Link>
+          </li>
+          <li>
+            <Button>CONTACT</Button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
