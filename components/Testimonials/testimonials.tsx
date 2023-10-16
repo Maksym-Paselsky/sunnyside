@@ -36,13 +36,34 @@ const Client = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const;
+const ClientImage = styled.div`
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+`;
 
 const ClientText = styled.p`
   font-size: 1.5rem;
   font-family: var(--barlow-font);
   width: 60%;
   text-align: center;
+  margin-bottom: 6rem;
+`;
+
+const ClientName = styled.h2`
+  font-size: 1.5rem;
+  font-family: var(--fraunces-font);
+  font-weight: 700;
+  color: rgb(0 0 0);
+  margin-bottom: 0.8rem;
+`;
+const ClientPosition = styled.p`
+  font-size: 1rem;
+  font-family: var(--barlow-font);
+  color: rgb(169 170 173);
 `;
 
 export default function Testimonials() {
@@ -58,10 +79,8 @@ export default function Testimonials() {
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </ClientText>
-          <div>
-            <h2>Emily R.</h2>
-            <p>Marketing Director</p>
-          </div>
+          <ClientName>Emily R.</ClientName>
+          <ClientPosition>Marketing Director</ClientPosition>
         </Client>
         <Client>
           <ClientImage>
@@ -71,10 +90,8 @@ export default function Testimonials() {
             Sunnyside’s enthusiasm coupled with their keen interest in our
             brand’s success made it a satisfying and enjoyable experience.
           </ClientText>
-          <div>
-            <h2>Thomas S.</h2>
-            <p>Chief Operating Officer</p>
-          </div>
+          <ClientName>Thomas S.</ClientName>
+          <ClientPosition>Chief Operating Officer</ClientPosition>
         </Client>
         <Client>
           <ClientImage>
@@ -84,10 +101,8 @@ export default function Testimonials() {
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
           </ClientText>
-          <div>
-            <h2>Jennie F.</h2>
-            <p>Business Owner</p>
-          </div>
+          <ClientName>Jennie F.</ClientName>
+          <ClientPosition>Business Owner</ClientPosition>
         </Client>
       </ClientSection>
     </Container>
