@@ -7,6 +7,8 @@ import ServiceCard from "@/components/ServiceCard/serviceCard";
 import graphicDesignImage from "@/public/images/desktop/image-graphic-design.jpg";
 import photographyImage from "@/public/images/desktop/image-photography.jpg";
 import Testimonials from "@/components/Testimonials/testimonials";
+import Galery from "@/components/Gallery/galery";
+import Footer from "@/components/Footer/footer";
 
 const FlexBox = styled.div`
   display: flex;
@@ -40,6 +42,8 @@ export default function Home() {
         ></ServiceCard>
       </FlexBox>
       <Testimonials></Testimonials>
+      <Galery></Galery>
+      <Footer></Footer>
     </main>
   );
 }
