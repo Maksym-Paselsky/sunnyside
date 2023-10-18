@@ -5,25 +5,25 @@ import logo from "../../public/logo.svg";
 import styled from "styled-components";
 
 const Button = styled.button`
-  font-family: var(--fraunces-font), sans-serif;
-  font-size: 1.2rem;
-  background: white;
-  font-weight: 400;
-  border: none;
-  color: black;
-  border-radius: 40px;
   margin-right: 40px;
   padding: 25px 35px;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  color: black;
+  font-family: var(--fraunces-font), sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
 `;
 
 const Link = styled.a`
+  margin-right: 40px;
+  padding: 12px 25px;
+  color: white;
   font-family: var(--barlow-font), sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
-  color: white;
   text-decoration: none;
-  margin-right: 40px;
-  padding: 12px 25px;
 `;
 
 export default function Header() {

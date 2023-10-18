@@ -7,14 +7,14 @@ import desktopOrange from "@/public/images/desktop/image-gallery-orange.jpg";
 import desktopSugar from "@/public/images/desktop/image-gallery-sugarcubes.jpg";
 const FlexBox = styled.div`
   display: flex;
-  flex-direction: row;
   width: 100%;
   height: 55vh;
+  flex-direction: row;
 `;
 const ImageWrapper = styled.div`
-  flex: 1;
   position: relative;
   width: 25%;
+  flex: 1;
 `;
 export default function Galery() {
   return (

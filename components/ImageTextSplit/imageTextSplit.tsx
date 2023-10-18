@@ -7,25 +7,24 @@ import standOutPicture from "@/public/images/desktop/image-stand-out.jpg";
 const Container = styled.div`
   display: flex;
   width: 100%;
-  background: red;
+  height: 75vh;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 75vh;
 `;
 const TextContainer = styled.div`
   display: flex;
-  background-color: rgb(255 251 249);
-  flex-direction: column;
   width: 50%;
+  background-color: rgb(255 251 249);
   height: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 const ImageContainer = styled.div`
+  position: relative;
   display: flex;
   width: 50%;
-  position: relative;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -33,27 +32,27 @@ const ImageContainer = styled.div`
 
 const TextZone = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 4rem 10rem 4rem 2rem;
   width: 80%;
+  padding: 4rem 10rem 4rem 2rem;
+  flex-direction: column;
   align-items: left;
 `;
 
 const Title = styled.h1`
-  font-family: var(--fraunces-font), sans-serif;
+  margin-bottom: 2rem;
   color: rgb(35 48 62);
+  font-family: var(--fraunces-font), sans-serif;
   font-weight: 900;
   font-size: 5rem;
   word-spacing: 1rem;
-  margin-bottom: 2rem;
 `;
 const BodyText = styled.p`
-  font-family: var(--barlow-font), sans-serif;
-  color: rgb(122 117 130);
-  font-weight: 300;
   width: 100%;
-  font-size: 2rem;
   margin-bottom: 5rem;
+  color: rgb(122 117 130);
+  font-family: var(--barlow-font), sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
 `;
 interface ButtonProps {
   bgColor?: string;
@@ -73,12 +72,12 @@ const Button = styled.button<ButtonProps>`
     content: "";
     position: absolute;
     display: inline-block;
-    bottom: 0;
-    left: -5px;
     width: 110%;
     height: 9px;
-    z-index: -1;
+    left: -5px;
+    bottom: 0;
     border-radius: 5px;
+    z-index: -1;
     background: ${(props) => props.bgColor || "rgb(255 245 183)"};
   }
 `;

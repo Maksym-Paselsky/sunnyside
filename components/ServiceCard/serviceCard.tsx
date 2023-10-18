@@ -3,12 +3,12 @@ import Image, { StaticImageData } from "next/image";
 
 const Container = styled.div`
   position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   height: 100%;
   background: green;
+  justify-content: center;
+  align-items: center;
 `;
 
 interface TextProps {
@@ -17,26 +17,26 @@ interface TextProps {
 
 const Title = styled.h1<TextProps>`
   position: absolute;
+  margin-bottom: 2rem;
   bottom: 25%;
-  font-family: var(--fraunces-font), sans-serif;
   color: ${(props) => (props.textColor ? props.textColor : "white")};
+  font-family: var(--fraunces-font), sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   word-spacing: 1rem;
-  margin-bottom: 2rem;
 `;
 
 const BodyText = styled.p<TextProps>`
-  display: flex;
   position: absolute;
+  display: flex;
+  width: 50%;
+  margin-bottom: 5rem;
   bottom: 5%;
-  font-family: var(--barlow-font), sans-serif;
   color: ${(props) => (props.textColor ? props.textColor : "white")};
   font-weight: 300;
-  width: 50%;
+  font-family: var(--barlow-font), sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 5rem;
 `;
 
 interface Props {

@@ -7,21 +7,21 @@ import jennie from "@/public/images/image-jennie.jpg";
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  height: 80vh;
+  width: 100%;
   background: rgb(255 253 249);
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 80vh;
 `;
 const Title = styled.h1`
-  font-size: 2rem;
-  font-family: var(--fraunces-font);
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgb(169 170 173);
   margin-bottom: 2rem;
+  color: rgb(169 170 173);
+  font-family: var(--fraunces-font);
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 `;
 const ClientSection = styled.div`
   display: flex;
@@ -37,33 +37,33 @@ const Client = styled.div`
   justify-content: center;
 `;
 const ClientImage = styled.div`
-  border-radius: 50%;
   width: 80px;
   height: 80px;
   overflow: hidden;
   margin-top: 5rem;
   margin-bottom: 3rem;
+  border-radius: 50%;
 `;
 
 const ClientText = styled.p`
-  font-size: 1.5rem;
-  font-family: var(--barlow-font);
   width: 60%;
-  text-align: center;
   margin-bottom: 6rem;
+  font-family: var(--barlow-font);
+  font-size: 1.5rem;
+  text-align: center;
 `;
 
 const ClientName = styled.h2`
+  margin-bottom: 0.8rem;
+  color: rgb(0 0 0);
   font-size: 1.5rem;
   font-family: var(--fraunces-font);
   font-weight: 700;
-  color: rgb(0 0 0);
-  margin-bottom: 0.8rem;
 `;
 const ClientPosition = styled.p`
+  color: rgb(169 170 173);
   font-size: 1rem;
   font-family: var(--barlow-font);
-  color: rgb(169 170 173);
 `;
 
 export default function Testimonials() {

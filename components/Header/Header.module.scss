@@ -2,17 +2,17 @@
 
 .navbar {
   position: absolute;
+  display: flex;
   width: 100%;
   top: 0;
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
-  align-items: center;
   z-index: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
-  margin: 30px;
   width: 100px;
+  margin: 30px;
 }
 .list {
   display: flex;

@@ -9,38 +9,37 @@ const RelativeContainer = styled.div`
   height: 100vh;
 `;
 const Title = styled.h1`
-  font-family: var(--fraunces-font), sans-serif;
   color: white;
+  font-family: var(--fraunces-font), sans-serif;
   font-size: 4rem;
   letter-spacing: 1rem;
   word-spacing: 1rem;
 `;
 const TextContainer = styled.div`
   position: absolute;
-  top: 10%;
-  white-space: nowrap;
   width: 100wh;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  white-space: nowrap;
   z-index: 1;
+  transform: translate(-50%, 50%);
 `;
 const Arrow = styled.div`
   position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  top: 47%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 `;
 
-const Picture = styled.div`.
-  position: absolute;
-  top: 0;
-  left: 0;
+const Picture = styled.div`
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   z-index: 1;
 `;
 

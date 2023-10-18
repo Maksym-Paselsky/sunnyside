@@ -12,10 +12,9 @@ import Footer from "@/components/Footer/footer";
 
 const FlexBox = styled.div`
   display: flex;
-  flex-direction: row;
-  background: red;
   width: 100%;
   height: 70vh;
+  flex-direction: row;
 `;
 export default function Home() {
   return (
